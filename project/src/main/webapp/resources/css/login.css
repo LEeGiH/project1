@@ -1,0 +1,72 @@
+/* login.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 400px; /* 수정: 더 큰 폭으로 조정 */
+    margin: 50px auto; /* 수정: 화면 가운데에 정확히 위치 */
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+a {
+    display: inline-block; /* 링크를 인라인 블록 요소로 표시하여 한 줄에 나타나도록 합니다. */
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+
+a:hover {
+    color: #555;
+}
+.links {
+    text-align: center; /* 링크들을 수평으로 가운데 정렬합니다. */
+    margin-top: 5px; /* 링크들과 로그인 폼 사이의 간격을 조절합니다. */
+}
+
+.links a {
+    display: inline-block; /* 링크를 인라인 블록 요소로 설정하여 수평으로 배치합니다. */
+    margin: 0 10px; /* 링크들 사이의 간격을 조절합니다. */
+    margin-top: -10px; /* 링크들을 조금 위로 올립니다. */
+}

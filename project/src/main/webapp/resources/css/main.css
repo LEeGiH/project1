@@ -1,0 +1,131 @@
+body.main-body {
+font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.loginBlock {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    width: auto;
+}
+/* 로그인 블록 */
+
+.main1block{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+.loginBlock button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.loginBlock a {
+    text-decoration: none;
+    color: #333;
+}
+.loginBlock button:hover {
+    background-color: #45a049;
+}
+
+/* 전체 카테고리 */
+.allKategorie {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    height: 60px;
+}
+.selectKategorie {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    justify-content: left;
+    height: 50px;
+    width: 900px;
+}
+.scroll-left, .scroll-right {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    margin: 15px;
+}
+.scroll-left::before, .scroll-right::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+.scroll-left::before {
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #000 transparent transparent;
+}
+.scroll-right::before {
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #000;
+}
+.selectKategorie::-webkit-scrollbar,
+.allKategorie::-webkit-scrollbar {
+    display: none;
+}
+
+/* 각 카테고리 */
+.Kategorie {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    height: 20px;
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    flex-shrink: 0;
+}
+.Kategorie a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 검색 리스트 */
+.list.Search {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.list.Search form {
+    display: flex;
+    align-items: center;
+}
+.list.Search select, .list.Search input[type="text"], .list.Search input[type="submit"], .list.Search button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+.list.Search select {
+    width: 100px;
+}
+.list.Search input[type="text"] {
+    flex: 1;
+}
+.list.Search input[type="submit"], .list.Search button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.list.Search input[type="submit"]:hover, .list.Search button:hover {
+    background-color: #45a049;
+}
